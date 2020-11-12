@@ -66,13 +66,16 @@ function getToDoItem():ToDoItem {
  */
 function displayToDoItem(item:ToDoItem):void {
 
-    let itemText = document.createElement("h2")
+    let itemText = document.createElement("h3")
     itemText.innerText = item.title;
 
     let itemDate = document.createElement("p");
     itemDate.innerText = item.due.toDateString();
 
     let itemDiv = document.createElement("div");
+
+    itemDiv.onclick = markAsComplete;
+
     itemDiv.classList.add("todo")
     if (item.isCompleted) {
         itemDiv.classList.add("complete");
@@ -89,6 +92,15 @@ function displayToDoItem(item:ToDoItem):void {
         let incompleteToDo = getElement("to-do");
         incompleteToDo.appendChild(itemDiv);
     }
+}
+
+function markAsComplete() {
+    let itemDiv = <HTMLElement>this;
+    itemDiv.classList.add("complete");
+
+    let completeItems = getElement("done");
+    console.log(completeItems);
+    completeItems.appendChild(itemDiv);
 }
 
 /* Tasks: 
