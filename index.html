@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
 </head>
 <body>
-    <h1>ToDo List</h1>
+    <h1>To Do List</h1>
 
     <label for="title">Title</label>
     <input type="text" id="title">
@@ -19,14 +19,21 @@
     <span>*</span>
     <br>
 
-    <input type="checkbox">
+    <input id="complete" type="checkbox">
     <label for="complete">Finished?</label>
     <br>
 
-    <input type="button" value="Add Your ToDo">
+    <input type="button" id="add" value="Add Your ToDo">
+
+    <h3>To Do</h3>
+    <div id="to-do"></div>
+    <br>
+
+    <h3>Completed</h3>
+    <div id="done"></div>
 
     
     <script src="https://unpkg.com/js-datepicker"></script>
-    <script src="/js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
