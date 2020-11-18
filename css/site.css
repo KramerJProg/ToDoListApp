@@ -1,11 +1,67 @@
-.todo {
-    width: 20%;
-    box-sizing: border-box;
+body{
     background-color: lightblue;
+    font-family: 'Special Elite', cursive;
+}
+
+#top-div{
+    background-color: rgba(253, 165, 0, 0.671);
+    border: .2em solid black;
+    border-radius: .3em;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
+h1{
+    text-align: center;
+    
+}
+
+#title-label{
+    margin-left: 33%;
+}
+
+#title{
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+}
+
+#due-label{
+    margin-left: 33%;
+}
+
+#due{
+    padding-bottom: .2em;
+    margin-bottom: 1em;
+}
+
+#finish-label{
+    margin-left: 33%;
+}
+
+#complete{
+    margin-bottom: 1em;
+}
+
+#add{
+    margin-left: 33%;
+}
+
+h3{
+    text-align: center;
+}
+
+.todo {
+    text-align: center;
+    width: 10%;
+    box-sizing: border-box;
+    background-color: lightsalmon;
     padding: .5em;
-    border-radius: .75em;
+    border-radius: .5em;
     margin: 1em;
     cursor: pointer;
+    margin-left: 45%;
 }
 
 .todo h3 {
@@ -18,15 +74,6 @@
 
 .complete {
     opacity: 40%;
-    background-color: lightgreen;
+    background-color: lightsalmon;
     text-decoration: line-through;
-}
-
-#to-do {
-    border: .1em solid black;
-    margin-bottom: 1em;
-}
-
-#done {
-    border: .2em solid blue;
 }
